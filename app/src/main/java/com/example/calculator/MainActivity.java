@@ -72,16 +72,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             solution_tv.setText((result_tv).getText());
             return;
         }
-        if (buttontext.equals("C")) {
+        if (buttontext.equals("C" )) {
                 if (datatocalculate.length()>1){
                 datatocalculate = datatocalculate.substring(0,datatocalculate.length()-1);
                 }
-                else{
-                    datatocalculate = "0";
+                if(datatocalculate.length()==0){
+                    datatocalculate = "";
                 }
 
-
-//            datatocalculate = datatocalculate.substring(0,datatocalculate.length()-1);
         } else {
             datatocalculate = datatocalculate+buttontext;
         }
